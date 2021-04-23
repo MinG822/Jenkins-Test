@@ -5,7 +5,12 @@ pipeline {
         }
     }
     stages {
-        stage('build') {
+        stage('Test') {
+            steps {
+                sh test_calc.sh
+            }
+        }
+        stage('Build') {
             steps {
                 sh 'echo "I want to see buid success"'
             }
