@@ -4,6 +4,11 @@ pipeline {
             stage('build') {
                 stpes {
                     sh 'python --version'
+		    sh 'echo "Hello World"'
+		    sh '''
+		    	echo "Multiline shell workds too"
+			ls -lah
+			'''
                     }
                 }
             }
