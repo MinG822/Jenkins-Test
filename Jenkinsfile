@@ -2,7 +2,7 @@ pipeline {
         agent { docker {image 'python:2.5.1'}}
         stages {
             stage('build') {
-                stpes {
+                steps {
                     sh 'python --version'
 		    sh 'echo "Hello World"'
                     }
